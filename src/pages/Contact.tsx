@@ -30,15 +30,47 @@ export default function Contact() {
     e.preventDefault();
     setIsSubmitting(true);
 
-    await new Promise((resolve) => setTimeout(resolve, 1000));
+    try {
+      const payload = new URLSearchParams();
+      payload.append("name", formData.name);
+      payload.append("email", formData.email);
+      payload.append("playerAge", formData.playerAge);
+      payload.append("message", formData.message);
+      // Optional: subject for the email
+      payload.append("_subject", "Website enquiry - Phase Elite");
+      // Disable Formsubmit's captcha (they may still require verification on first use)
+      payload.append("_captcha", "false");
 
-    toast({
-      title: "Enquiry Submitted",
-      description: "Thank you for your interest. We'll be in touch soon.",
-    });
+      const resp = await fetch(
+        "https://formsubmit.co/maison123212gmail.com",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/x-www-form-urlencoded",
+          },
+          body: payload.toString(),
+        }
+      );
 
-    setFormData({ name: "", email: "", playerAge: "", message: "" });
-    setIsSubmitting(false);
+      if (resp.ok || (resp.status >= 200 && resp.status < 400)) {
+        toast({
+          title: "Enquiry Submitted",
+          description: "Thank you for your interest. We'll be in touch soon.",
+        });
+        setFormData({ name: "", email: "", playerAge: "", message: "" });
+      } else {
+        throw new Error(`Form submit failed: ${resp.status}`);
+      }
+    } catch (err) {
+      console.error(err);
+      toast({
+        title: "Submission Failed",
+        description:
+          "There was a problem sending your enquiry. Please try again or email CoachWard1993@outlook.com directly.",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (
@@ -193,7 +225,7 @@ export default function Contact() {
                   <div>
                     <p className="font-medium text-sm">Phone</p>
                     <p className="text-muted-foreground group-hover:text-foreground transition-colors">
-                      07XXX XXXXXX
+                      07586437691 
                     </p>
                   </div>
                 </motion.a>
