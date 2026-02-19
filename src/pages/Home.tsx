@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
+import { YoutubeVideo } from "@/components/YoutubeVideo";
 import heroImage from "@/assets/hero121.jpg";
 
 const fadeInUp = {
@@ -66,7 +67,7 @@ export default function Home() {
               variants={fadeInUp}
               custom={0.2}
             >
-              Specialist 1-2-1 and small group player development designed to 
+              Specialist 121 and small group player development designed to 
               elevate individual technical ability, game intelligence, and 
               competitive edge. Based in Basildon and surrounding areas.
             </motion.p>
@@ -101,40 +102,13 @@ export default function Home() {
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
               Watch how our specialist approach develops players beyond the 
-              fundamentals—building confidence, creativity, and match-ready skills.
+              fundamentals building confidence, creativity, and match-ready skills.
             </p>
           </motion.div>
           
-          {/* Video Embed Placeholder */}
-          <motion.div
-            className="relative aspect-video glass-subtle overflow-hidden max-w-4xl mx-auto group"
-            initial={{ opacity: 0, scale: 0.95 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.7, ease: "easeOut" }}
-          >
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div className="text-center">
-                <motion.div
-                  className="w-16 h-16 rounded-full bg-foreground flex items-center justify-center mx-auto mb-4 cursor-pointer"
-                  whileHover={{ scale: 1.1 }}
-                  whileTap={{ scale: 0.95 }}
-                  transition={{ type: "spring", stiffness: 400, damping: 17 }}
-                >
-                  <svg 
-                    className="w-6 h-6 text-background ml-1" 
-                    fill="currentColor" 
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M8 5v14l11-7z"/>
-                  </svg>
-                </motion.div>
-                <p className="text-sm text-muted-foreground">
-                  Brand video placeholder
-                </p>
-              </div>
-            </div>
-          </motion.div>
+          <div className="max-w-4xl mx-auto">
+            <YoutubeVideo videoId="OpcYm7_GppE" title="Coaching Approach" />
+          </div>
         </div>
       </section>
 
@@ -162,7 +136,7 @@ export default function Home() {
               {
                 num: "03",
                 title: "Specialist Approach",
-                desc: "Not a mass participation programme. Small groups and 1-2-1 sessions that prioritise quality over quantity."
+                desc: "Not a mass participation programme. Small groups and 121 sessions that prioritise quality over quantity."
               }
             ].map((item, index) => (
               <motion.div

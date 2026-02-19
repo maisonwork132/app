@@ -37,7 +37,7 @@ export default function Contact() {
       payload.append("playerAge", formData.playerAge);
       payload.append("message", formData.message);
       // Optional: subject for the email
-      payload.append("_subject", "Website enquiry - Phase Elite");
+      payload.append("_subject", "Website enquiry Phase Elite");
       // Disable Formsubmit's captcha (they may still require verification on first use)
       payload.append("_captcha", "false");
 

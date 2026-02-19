@@ -93,7 +93,7 @@ export default function About() {
                 >
                   Next Phase Player Development was founded to provide the kind 
                   of specialist, individual-focused coaching that grassroots 
-                  players rarely have access to—the same quality of attention 
+                  players rarely have access to the same quality of attention 
                   that academy players receive.
                 </motion.p>
                 <motion.p
@@ -104,7 +104,7 @@ export default function About() {
                   With over a decade of coaching experience across grassroots, 
                   development centres, and academy environments, I've seen 
                   firsthand what separates players who progress from those who 
-                  plateau. It's rarely just about talent—it's about targeted 
+                  plateau. It's rarely just about talent it's about targeted 
                   development, consistent feedback, and the right environment.
                 </motion.p>
                 <motion.p
@@ -116,7 +116,7 @@ export default function About() {
                   of purpose, high standards, and genuine care for each player's 
                   individual journey. Whether you're looking to improve specific 
                   technical skills, prepare for trials, or simply get better 
-                  at the game you love—this is the place to do it.
+                  at the game you love this is the place to do it.
                 </motion.p>
               </div>
 

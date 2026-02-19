@@ -1,11 +1,10 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { YoutubeVideo } from "@/components/YoutubeVideo";
 
 const services = [
   {
-    title: "1–2-1 Player Development",
+    title: "1-2-1 Player Development",
     price: "£30",
     duration: "60 mins",
     description:
@@ -22,11 +21,11 @@ const services = [
     price: "£10",
     duration: "per player",
     description:
-      "High-quality training in groups of 3–6 players. Competitive environment with individual attention. Ideal for players who thrive in structured group settings.",
+      "High quality training in groups of 3–6 players. Competitive environment with individual attention. Ideal for players who thrive in structured group settings.",
     features: [
       "3–6 players maximum",
-      "Position-specific work",
-      "Game-realistic scenarios",
+      "Position specific work",
+      "Game realistic scenarios",
       "Team dynamics focus",
     ],
   },
@@ -89,14 +88,14 @@ export default function Services() {
           >
             Services
           </motion.h1>
-          <motion.p
+            <motion.p
             className="text-lg text-muted-foreground max-w-2xl"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
-          >
+            >
             Specialist player development programmes designed for serious 
-            improvement. Quality over quantity—every session matters.
+            improvement. Quality over quantity every session matters.
           </motion.p>
         </div>
       </section>
@@ -172,23 +171,31 @@ export default function Services() {
         </div>
       </section>
 
-      {/* Video Showcase */}
-      <section className="section-spacing">
+      {/* Call To Action (replaces video) */}
+      <section className="section-spacing bg-accent/5 rounded-lg">
         <div className="container-academy">
           <motion.div
-            className="max-w-4xl mx-auto"
+            className="max-w-3xl mx-auto py-12 text-center"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-2xl md:text-3xl font-bold mb-2 text-center">
-              See Our Coaching in Action
+            <h2 className="text-2xl md:text-3xl font-bold mb-3">
+              Ready to take the next step?
             </h2>
-            <p className="text-muted-foreground text-center mb-8">
-              Watch a glimpse of our training methodology and player development approach.
+            <p className="text-muted-foreground max-w-2xl mx-auto mb-6">
+              If you'd like to discuss sessions, availability, or find the right
+              programme for you, get in touch and we'll tailor a plan to your goals.
             </p>
-            <YoutubeVideo videoId="OpcYm7_GppE" title="Coach Training Session" />
+            <div className="flex items-center justify-center gap-4">
+              <Button asChild variant="hero">
+                <Link to="/contact">Contact Us</Link>
+              </Button>
+              <Button asChild variant="outline">
+                <Link to="/about">Learn More</Link>
+              </Button>
+            </div>
           </motion.div>
         </div>
       </section>

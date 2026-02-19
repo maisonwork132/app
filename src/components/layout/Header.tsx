@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import coachHLogo from "@/assets/coach H logo.png";
 
 const navLinks = [
   { name: "Home", path: "/" },
@@ -20,9 +21,11 @@ export function Header() {
         <div className="flex items-center justify-between px-4 md:px-0 h-16 md:h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center group">
-            <div className="h-10 w-10 md:h-12 md:w-12 rounded-lg bg-gradient-to-br from-accent to-accent/80 flex items-center justify-center mr-3 group-hover:shadow-lg group-hover:shadow-accent/30 transition-all">
-              <span className="text-xs font-bold text-accent-foreground">NP</span>
-            </div>
+            <img
+              src={coachHLogo}
+              alt="Coach H logo"
+              className="h-10 w-10 md:h-12 md:w-12 object-contain mr-3"
+            />
             <span className="text-base md:text-lg font-bold tracking-tight text-foreground">
               NEXT PHASE
             </span>
