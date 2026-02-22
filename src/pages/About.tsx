@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { YoutubeVideo } from "@/components/YoutubeVideo";
-import coachImage from "@/assets/IMG_7142.JPG";
+import coachImage from "@/assets/hborad.png";
 
 const qualifications = [
   { title: "UEFA B Licensed Coach", description: "Advanced coaching qualification" },
@@ -103,7 +103,7 @@ export default function About() {
                 >
                   With over a decade of coaching experience across grassroots, 
                   development centres, and academy environments, I've seen 
-                  firsthand what separates players who progress from those who 
+                  first hand what separates players who progress from those who 
                   plateau. It's rarely just about talent it's about targeted 
                   development, consistent feedback, and the right environment.
                 </motion.p>

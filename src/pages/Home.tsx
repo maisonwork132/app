@@ -67,7 +67,7 @@ export default function Home() {
               variants={fadeInUp}
               custom={0.2}
             >
-              Specialist 121 and small group player development designed to 
+              Specialist 1-2-1 and small group player development designed to 
               elevate individual technical ability, game intelligence, and 
               competitive edge. Based in Basildon and surrounding areas.
             </motion.p>
