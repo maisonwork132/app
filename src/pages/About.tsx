@@ -6,6 +6,7 @@ import coachImage from "@/assets/hborad.png";
 
 const qualifications = [
   { title: "UEFA B Licensed Coach", description: "Advanced coaching qualification" },
+  { title: "BSc Football Coaching", description: "Bachelor's degree in Football Coaching Development & Administration" },
   { title: "DBS Checked", description: "Enhanced disclosure verified" },
   { title: "First Aid Qualified", description: "Current certification" },
   { title: "Safeguarding Certified", description: "Child protection trained" },
@@ -126,26 +127,30 @@ export default function About() {
                 variants={fadeInUp}
                 custom={0.4}
               >
-                <h3 className="text-lg font-semibold mb-6">Qualifications</h3>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  {qualifications.map((qual, index) => (
-                    <motion.div
-                      key={index}
-                      className="flex items-start gap-3 rounded-lg border border-border/50 bg-gradient-to-br from-card to-card/80 p-4 transition-all hover:border-accent/50 hover:shadow-md hover:shadow-accent/10"
-                      initial={{ opacity: 0, y: 10 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      transition={{ delay: 0.5 + index * 0.1 }}
-                      whileHover={{ x: 4, y: -2 }}
-                    >
-                      <div className="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0" />
-                      <div>
-                        <p className="font-medium text-sm text-foreground">{qual.title}</p>
-                        <p className="text-xs text-muted-foreground">
-                          {qual.description}
-                        </p>
-                      </div>
-                    </motion.div>
-                  ))}
+                <h3 className="text-xl md:text-lg font-semibold mb-6 tracking-tight text-foreground">Qualifications</h3>
+
+                <div className="max-w-4xl mx-auto">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    {qualifications.map((qual, index) => (
+                      <motion.div
+                        key={index}
+                        className="h-full flex flex-col gap-3 rounded-xl border border-border/50 bg-card p-6 transition-transform duration-200 ease-out hover:-translate-y-1 hover:shadow-lg"
+                        initial={{ opacity: 0, y: 10 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ delay: 0.35 + index * 0.08 }}
+                      >
+                        <div className="flex items-start gap-3">
+                          <div className="w-3 h-3 bg-accent rounded-full mt-1 flex-shrink-0" />
+                          <div>
+                            <p className="font-medium text-base text-foreground">{qual.title}</p>
+                            <p className="text-sm text-muted-foreground mt-1 leading-snug">
+                              {qual.description}
+                            </p>
+                          </div>
+                        </div>
+                      </motion.div>
+                    ))}
+                  </div>
                 </div>
               </motion.div>
             </motion.div>
