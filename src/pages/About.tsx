@@ -105,7 +105,7 @@ export default function About() {
                   With over a decade of coaching experience across grassroots, 
                   development centres, and academy environments, I've seen 
                   first hand what separates players who progress from those who 
-                  plateau. It's rarely just about talent it's about targeted 
+                  fall short of their potential. It's rarely just about talent it's about targeted 
                   development, consistent feedback, and the right environment.
                 </motion.p>
                 <motion.p
