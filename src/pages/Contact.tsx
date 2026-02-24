@@ -42,7 +42,7 @@ export default function Contact() {
       payload.append("_captcha", "false");
 
       const resp = await fetch(
-        "https://formsubmit.co/maison12321@gmail.com",
+        "https://formsubmit.co/newphasepd@outlook.com",
         {
           method: "POST",
           headers: {
@@ -66,7 +66,7 @@ export default function Contact() {
       toast({
         title: "Submission Failed",
         description:
-          "There was a problem sending your enquiry. Please try again or email CoachWard1993@outlook.com directly.",
+          "There was a problem sending your enquiry. Please try again or email newphasepd@outlook.com directly.",
       });
     } finally {
       setIsSubmitting(false);
