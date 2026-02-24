@@ -42,13 +42,7 @@ export function Footer() {
               Contact
             </h4>
             <div className="flex flex-col gap-3">
-              <a
-                href="tel:+447586437691"
-                className="flex items-center gap-2 text-sm text-background/70 hover:text-background transition-colors"
-              >
-                <Phone className="h-4 w-4" />
-                <span>07586 437691</span>
-              </a>
+              {/* Phone removed per request */}
               <a
                 href="https://instagram.com/coach_hward"
                 target="_blank"

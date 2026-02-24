@@ -212,23 +212,7 @@ export default function Contact() {
               </motion.h2>
               
               <div className="space-y-6 mb-10">
-                <motion.a
-                  href="tel:+447000000000"
-                  className="flex items-start gap-4 group"
-                  variants={fadeInUp}
-                  custom={0.1}
-                  whileHover={{ x: 4 }}
-                >
-                  <div className="w-10 h-10 glass-subtle flex items-center justify-center flex-shrink-0 group-hover:bg-muted/80 transition-colors">
-                    <Phone className="h-5 w-5 text-foreground" />
-                  </div>
-                  <div>
-                    <p className="font-medium text-sm">Phone</p>
-                    <p className="text-muted-foreground group-hover:text-foreground transition-colors">
-                      07586437691 
-                    </p>
-                  </div>
-                </motion.a>
+                {/* Phone removed per request */}
 
                 <motion.a
                   href="https://instagram.com/coach_hward"
