@@ -42,7 +42,7 @@ export default function Contact() {
       payload.append("_captcha", "false");
 
       const resp = await fetch(
-        "https://formsubmit.co/CoachWard1993@outlook.com",
+        "https://formsubmit.co/coachward1993@outlook.com",
         {
           method: "POST",
           headers: {
