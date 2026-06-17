@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { YoutubeVideo } from "@/components/YoutubeVideo";
-import coachImage from "@/assets/hborad.png";
+import coachImage from "@/assets/coach-about.jpg";
 
 const qualifications = [
   { title: "UEFA B Licensed Coach", description: "Advanced coaching qualification" },
