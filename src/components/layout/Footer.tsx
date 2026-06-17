@@ -9,9 +9,9 @@ export function Footer() {
           {/* Brand */}
           <div>
             <h3 className="text-lg font-bold mb-4">Next Phase</h3>
-            <p className="text-background/70 text-sm leading-relaxed">
+              <p className="text-background/70 text-sm leading-relaxed">
               Specialist player development for aspiring footballers. 
-              Academy-level coaching in Basildon and surrounding areas.
+              Academy-level coaching in South Wales.
             </p>
           </div>
 
@@ -54,7 +54,7 @@ export function Footer() {
               </a>
               <div className="flex items-center gap-2 text-sm text-background/70">
                 <MapPin className="h-4 w-4" />
-                <span>Basildon & surrounding areas</span>
+                <span>South Wales</span>
               </div>
             </div>
           </div>

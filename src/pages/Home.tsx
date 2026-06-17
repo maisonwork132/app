@@ -69,7 +69,7 @@ export default function Home() {
             >
               Specialist 1-2-1 and small group player development designed to 
               elevate individual technical ability, game intelligence, and 
-              competitive edge. Based in Basildon and surrounding areas.
+              competitive edge. Based in South Wales.
             </motion.p>
             <motion.div
               className="flex flex-col sm:flex-row gap-4"

@@ -245,7 +245,7 @@ export default function Contact() {
                   <div>
                     <p className="font-medium text-sm">Location</p>
                     <p className="text-muted-foreground">
-                      Basildon & surrounding areas
+                      South Wales
                     </p>
                   </div>
                 </motion.div>
